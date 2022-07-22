@@ -115,7 +115,7 @@ Process* _doRandomThings(Process *plist) {
 			processSetStatus(p,PROC_READY);
 			printf("Desbloqueado processo %d\n",pid);
 		}
-	}			
+	}
 	printf("======================\n");
 	return plist;
 }
@@ -140,6 +140,7 @@ int main(void) {
 			case 0:
 				printf("(Passo:%d)\n", step);
 				plist = _doRandomThings(plist);
+				printf("aaaaa");
 				processDump(plist,_dumpSchedParams);
 				printf("\n");
 				i++;

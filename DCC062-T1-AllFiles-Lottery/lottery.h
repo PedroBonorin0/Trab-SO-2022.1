@@ -17,8 +17,8 @@
 
 typedef struct lottery_params {
         int num_tickets;
-        //...
-        //...
+        int num_minor_ticket;
+        int num_greater_ticket;
 } LotterySchedParams;
 
 //Funcao chamada pela inicializacao do S.O. para a incializacao do escalonador
